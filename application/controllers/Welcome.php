@@ -1,0 +1,39 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+
+class Welcome extends CI_Controller {
+	
+
+	public function __construct() { 
+		parent::__construct();
+		$this->load->model('simple_html_dom_helper');
+		$this->load->model('scrapping');
+		
+	 } 
+	public function index()
+	{
+		$scrap = $this->scrapping;
+
+		// file
+		$hasil = $scrap->scrape_insta('lucintaluna');
+		$follower = $hasil['entry_data']['ProfilePage'][0]['graphql']['user']['edge_followed_by']['count'];
+		$following = $hasil['entry_data']['ProfilePage'][0]['graphql']['user']['edge_follow']['count'];
+
+		echo $follower;
+		echo "<br>";
+		echo $following;
+		// $getcont = file_get_contents('http://instagram.com/pillowkarta');
+		// $shards = explode('window._sharedData = ', $getcont);
+		// $insta_json = explode(';</script>', $shards[1]); 
+		// print_r($insta_json);
+		// $this->load->view('index.php');
+	}
+
+	public function getig()
+	{
+		$getcont = file_get_contents('http://instagram.com/pillowkarta');
+
+		echo $getcont;
+	}
+}
