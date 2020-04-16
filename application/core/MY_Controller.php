@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller {
 
-    protected $data = array()
+    protected $data = array();
 
     
     public function __construct()
@@ -14,7 +14,7 @@ class MY_Controller extends CI_Controller {
         //Do your magic here
     }
 
-    protected function render($the_view = NULL, $template = 'template'){
+    protected function render($the_view = NULL, $template = 'public_template'){
         if(is_null($template))
         {
             $this->load->view($the_view, $this->data);
@@ -35,7 +35,7 @@ class Public_Controller extends MY_Controller
         parent::__construct();
     }
 
-    protected function render($the_view = NULL, $template = 'admin_master')
+    protected function render($the_view = NULL, $template = 'public_template')
     {
         parent::render($the_view, $template);
     }

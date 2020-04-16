@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-class Welcome extends CI_Controller {
+class Welcome extends Public_Controller {
 	
 
 	public function __construct() { 
@@ -12,6 +12,11 @@ class Welcome extends CI_Controller {
 		
 	 } 
 	public function index()
+	{
+		$this->render('public/public_view');
+	}
+
+	public function getig()
 	{
 		$scrap = $this->scrapping;
 
@@ -28,12 +33,5 @@ class Welcome extends CI_Controller {
 		// $insta_json = explode(';</script>', $shards[1]); 
 		// print_r($insta_json);
 		// $this->load->view('index.php');
-	}
-
-	public function getig()
-	{
-		$getcont = file_get_contents('http://instagram.com/pillowkarta');
-
-		echo $getcont;
 	}
 }
