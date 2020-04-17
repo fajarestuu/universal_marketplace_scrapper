@@ -2,5 +2,6 @@
 
 Dibuat untuk menyediakan informasi sebuah produk dari marketplace yang ada di Indonesia.
 
-Template : htmlstream
+Template : htmlstream 
+
 Access API : -
