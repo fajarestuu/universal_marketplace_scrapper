@@ -37,7 +37,7 @@ class Public_Controller extends MY_Controller
 
     protected function render($the_view = NULL, $template = 'public_template')
     {
-        parent::render($the_view, $template);
+        parent::render('public/'.$the_view, $template);
     }
     
 }

@@ -7,6 +7,8 @@ echo $the_view_content;
 
 $this->load->view('_partial/footer');
 $this->load->view('_partial/secondary_content');
+$this->load->view('_partial/foot');
+
 
 
 ?>

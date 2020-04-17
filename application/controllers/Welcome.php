@@ -13,7 +13,7 @@ class Welcome extends Public_Controller {
 	 } 
 	public function index()
 	{
-		$this->render('public/public_view');
+		$this->render('public_view');
 	}
 
 	public function getig()
@@ -21,7 +21,7 @@ class Welcome extends Public_Controller {
 		$scrap = $this->scrapping;
 
 		// file
-		$hasil = $scrap->scrape_insta('lucintaluna');
+		$hasil = $scrap->scrape_insta('fajarestuu');
 		$follower = $hasil['entry_data']['ProfilePage'][0]['graphql']['user']['edge_followed_by']['count'];
 		$following = $hasil['entry_data']['ProfilePage'][0]['graphql']['user']['edge_follow']['count'];
 
@@ -33,5 +33,12 @@ class Welcome extends Public_Controller {
 		// $insta_json = explode(';</script>', $shards[1]); 
 		// print_r($insta_json);
 		// $this->load->view('index.php');
+	}
+
+	public function linkinput()
+	{
+		// echo $this->input->post('link');
+		$this->render('product_detail_view');
+		
 	}
 }

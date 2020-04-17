@@ -69,7 +69,7 @@
         <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
           <!-- Logo -->
           <a class="d-inline-block mb-5" href="index.html" aria-label="Space">
-            <img src="../../assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+            <img src="<?= base_url()?>assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;">
           </a>
           <!-- End Logo -->
 
@@ -101,19 +101,19 @@
                     <!-- List of Languages -->
                     <div class="list-group list-group-borderless list-group-flush">
                       <a class="active d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="United States Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="United States Flag">
                         English
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/fr.svg" alt="France Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/fr.svg" alt="France Flag">
                         Français
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/de.svg" alt="Germany Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/de.svg" alt="Germany Flag">
                         Deutsch
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/pt.svg" alt="Portugal Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/pt.svg" alt="Portugal Flag">
                         Português
                       </a>
                     </div>
@@ -124,19 +124,19 @@
                     <!-- List of Languages -->
                     <div class="list-group list-group-borderless list-group-flush">
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/es.svg" alt="Spain Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/es.svg" alt="Spain Flag">
                         Español
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/it.svg" alt="Italy Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/it.svg" alt="Italy Flag">
                         Italiano
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/ru.svg" alt="Russian Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/ru.svg" alt="Russian Flag">
                         Русский
                       </a>
                       <a class="d-flex align-items-center list-group-item list-group-item-action" href="#">
-                        <img class="max-width-3 mr-2" src="../../assets/vendor/flag-icon-css/flags/4x3/tr.svg" alt="Turkey Flag">
+                        <img class="max-width-3 mr-2" src="<?= base_url()?>assets/vendor/flag-icon-css/flags/4x3/tr.svg" alt="Turkey Flag">
                         Türkçe
                       </a>
                     </div>
@@ -156,7 +156,7 @@
           </div>
           <!-- End Language -->
 
-          <p class="small text-muted">All rights reserved. &copy; Space. 2018 Htmlstream.</p>
+          <p class="small text-muted">All rights reserved. &copy; felaboratory 2020.</p>
         </div>
       </div>
     </div>

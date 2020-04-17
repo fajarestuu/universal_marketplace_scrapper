@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="<?= base_url()?>assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="<?= base_url()?>assets/vendor/custombox/dist/custombox.min.css">
   <link rel="stylesheet" href="<?= base_url()?>assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/vendor/slick-carousel/slick/slick.css">
 
   <!-- CSS Space Template -->
   <link rel="stylesheet" href="<?= base_url()?>assets/css/theme.css">

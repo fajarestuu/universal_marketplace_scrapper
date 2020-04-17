@@ -15,8 +15,8 @@
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
             <a class="navbar-brand u-header__navbar-brand" href="../home/index.html" aria-label="Space">
-              <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/logo.svg" alt="Logo">
-              <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo-short.svg" alt="Logo">
+              <img class="u-header__navbar-brand-default" src="<?= base_url()?>assets/logo/logo.svg" alt="Logo">
+              <img class="u-header__navbar-brand-mobile" src="<?= base_url()?>assets/logo/logo.png" alt="Logo">
             </a>
           </div>
           <!-- End Logo -->
@@ -43,172 +43,16 @@
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="<?= base_url()?>"
                    aria-haspopup="true"
                    aria-expanded="false"
                    aria-labelledby="homeSubMenu">
                   Home
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
                 </a>
-
-                <!-- Home - Submenu -->
-                <ul id="homeSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
-                    aria-labelledby="homeMegaMenu">
-                  <!-- Classic -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeClassic">
-                      Classic
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeClassic" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeClassic">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/index.html">Default</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/classic-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/classic-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/classic-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Classic -->
-
-                  <!-- Corporate -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeCorporate" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeCorporate">
-                      Corporate
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeCorporate" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeCorporate">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/corporate-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/corporate-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/corporate-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Corporate -->
-
-                  <!-- Creative -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeCreative" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeCreative">
-                      Creative
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeCreative" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeCreative">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/creative-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/creative-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/creative-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Creative -->
-
-                  <!-- Modern -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeModern" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeModern">
-                      Modern
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeModern" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeModern">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/modern-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/modern-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/modern-start-up.html">Start-Up</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/modern-digital.html">Digital</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Modern -->
-
-                  <!-- App -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeApp" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeApp">
-                      App
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeApp" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeApp">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-start-up.html">Start-Up</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-digital.html">Digital</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-modern.html">Modern</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../home/app-minimal.html">Minimal</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- End App -->
-                </ul>
-                <!-- End Home - Submenu -->
               </li>
               <!-- End Home -->
 
-              <!-- Pages -->
+              <!-- About -->
               <li class="nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="fadeInUp"
@@ -217,7 +61,7 @@
                 <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
                    aria-haspopup="true"
                    aria-expanded="false">
-                  Pages
+                  About
                   <span class="fa fa-angle-down u-header__nav-link-icon"></span>
                 </a>
 
@@ -225,399 +69,48 @@
                 <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="PagesMegaMenu">
                   <div class="u-header__mega-menu-wrapper-v1">
                     <ul class="row list-unstyled u-header__mega-menu-list">
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
+                      <li class="col-sm-4 col-lg-2 u-header__mega-menu-col mb-4 mb-lg-0">
                         <span class="u-header__sub-menu-title">About &amp; Services</span>
 
                         <!-- Links -->
                         <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="about-agency.html">About Agency</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="about-start-up.html">About Start-Up</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="services-agency.html">Services Agency</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="services-start-up.html">Services Start-Up</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="about-agency.html">About Me</a></li>
                         </ul>
                         <!-- End Links -->
                       </li>
 
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
-                        <span class="u-header__sub-menu-title">Careers</span>
+                      <li class="col-sm-4 col-lg-2 u-header__mega-menu-col mb-4 mb-lg-0">
+                        <span class="u-header__sub-menu-title">Works</span>
 
                         <!-- Links -->
                         <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="careers.html">Careers</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="careers-single.html">Careers Single</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="hire-us.html">Hire Us</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="signin-simple.html">GitHub</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="signup-simple.html">GitLab</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="recover-account.html">Behance</a></li>
                         </ul>
                         <!-- End Links -->
                       </li>
 
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
-                        <span class="u-header__sub-menu-title">Signin &amp; Signup</span>
-
-                        <!-- Links -->
-                        <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="signin-simple.html">Signin Simple</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="signup-simple.html">Signup Simple</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="recover-account.html">Recover Account</a></li>
-                        </ul>
-                        <!-- End Links -->
-                      </li>
-
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-sm-0">
+                      <li class="col-sm-4 col-lg-2 u-header__mega-menu-col mb-4 mb-sm-0">
                         <span class="u-header__sub-menu-title">Contacts</span>
 
                         <!-- Links -->
                         <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="contacts-agency.html">Contacts Agency</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="contacts-business.html">Contacts Business</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="contacts-agency.html">Whatsapp</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="contacts-business.html">Instaram</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="contacts-business.html">E-Mail</a></li>
                         </ul>
                         <!-- End Links -->
                       </li>
 
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col">
-                        <span class="u-header__sub-menu-title">Utilities</span>
-
-                        <!-- Links -->
-                        <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="help.html">Help</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="pricing.html">Pricing</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="terms.html">Terms &amp; Conditions</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="privacy.html">Privacy &amp; Policy</a></li>
-                        </ul>
-                        <!-- End Links -->
-                      </li>
-
-                      <li class="col-sm-6 col-lg-2 u-header__mega-menu-col">
-                        <span class="u-header__sub-menu-title">Specialty</span>
-
-                        <!-- Links -->
-                        <ul class="list-unstyled">
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="coming-soon.html">Coming Soon</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="maintenance-mode.html">Maintenance Mode</a></li>
-                          <li><a class="nav-link u-header__sub-menu-nav-link px-0" href="error-404.html">Error 404</a></li>
-                        </ul>
-                        <!-- End Links -->
-                      </li>
+                      
                     </ul>
                   </div>
                 </div>
                 <!-- End Pages - Mega Menu -->
               </li>
-              <!-- End Pages -->
+              <!-- End About -->
 
-              <!-- Works -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="worksMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="worksSubMenu">
-                  Works
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
-
-                <!-- Works - Submenu -->
-                <ul id="worksSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
-                    aria-labelledby="worksMegaMenu">
-                  <!-- Classic -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkWorksBoxedLayout" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuWorksBoxedLayout">
-                      Classic
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuWorksBoxedLayout" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkWorksBoxedLayout">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-classic.html">Portfolio Classic</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-grid.html">Portfolio Grid</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-masonry.html">Portfolio Masonry</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-gallery.html">Portfolio Gallery</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-slider.html">Portfolio Slider</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Classic -->
-
-                  <!-- Full Width -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkWorksFullWidthLayout" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuWorksFullWidthLayout">
-                      Full Width Layout
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuWorksFullWidthLayout" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkWorksFullWidthLayout">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/fullwidth-classic.html">Portfolio Classic</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/fullwidth-grid.html">Portfolio Grid</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/fullwidth-masonry.html">Portfolio Masonry</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/fullwidth-gallery.html">Portfolio Gallery</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/fullwidth-slider.html">Portfolio Slider</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Full Width -->
-
-                  <!-- Single Page -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkWorksSinglePage" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuWorksSinglePage">
-                      Single Page
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuWorksSinglePage" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkWorksSinglePage">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-simple.html">Single Page Simple</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-grid.html">Single Page Grid</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a>
-                      </li>
-                      <li class="dropdown-divider"></li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Single Page -->
-                </ul>
-                <!-- End Works - Submenu -->
-              </li>
-              <!-- End Works -->
-
-              <!-- Blog -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="blogSubMenu">
-                  Blog
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
-
-                <!-- Blog - Submenu -->
-                <ul id="blogSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
-                    aria-labelledby="blogMegaMenu">
-                  <!-- Classic -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogClassic">
-                      Classic
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogClassic" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogClassic">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-full-width.html">Full Width</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Classic -->
-
-                  <!-- Grid -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGrid" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGrid">
-                      Grid
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGrid" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGrid">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-full-width.html">Full Width</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Grid -->
-
-                  <!-- List -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogList" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogList">
-                      List
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogList" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogList">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-full-width.html">Full Width</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- List -->
-
-                  <!-- Masonry -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGridMinimal" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGridMinimal">
-                      Masonry
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGridMinimal" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGridMinimal">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-full-width.html">Full Width</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Masonry -->
-
-                  <!-- Single Article -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGridMasonry" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGridMasonry">
-                      Single Article
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGridMasonry" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGridMasonry">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-classic.html">Classic</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-simple.html">Simple</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Single Article -->
-                </ul>
-                <!-- End Submenu -->
-              </li>
-              <!-- End Blog -->
-
-              <!-- Shop -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="shopSubMenu">
-                  Shop
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
-
-                <!-- Shop - Submenu -->
-                <ul id="shopSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
-                    aria-labelledby="shopMegaMenu">
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/classic.html">Classic</a>
-                  </li>
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/single-product.html">Single Product</a>
-                  </li>
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/checkout.html">Checkout</a>
-                  </li>
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/empty-cart.html">Empty Cart</a>
-                  </li>
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/gift-card.html">Gift Card</a>
-                  </li>
-                  <li class="dropdown-item u-header__sub-menu-list-item py-0">
-                    <a class="nav-link u-header__sub-menu-nav-link" href="../shop/order-completed.html">Order Completed</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- End Shop -->
-
-              <!-- Starter - Link -->
-              <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="../../starter/index.html">
-                  Starter
-                </a>
-              </li>
-              <!-- End Starter - Link -->
 
               <!-- Button -->
               <li class="nav-item u-header__nav-item-btn">
