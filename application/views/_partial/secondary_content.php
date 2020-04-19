@@ -38,7 +38,7 @@
               <ul class="list-unstyled font-size-14 mb-5">
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/finance-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/finance-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Dashboard</span>
                     </div>
@@ -46,7 +46,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/touch-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/touch-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Activity</span>
                     </div>
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/team-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/team-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Team</span>
                     </div>
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/email-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>assets/svg/components/email-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Mailbox</span>
                     </div>
@@ -70,7 +70,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/projects-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/projects-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Projects</span>
                     </div>
@@ -89,7 +89,7 @@
               <ul class="list-unstyled font-size-14 mb-0">
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/calendar-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/calendar-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Calendar</span>
                     </div>
@@ -97,7 +97,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/cog-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/cog-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Tools</span>
                     </div>
@@ -105,7 +105,7 @@
                 </li>
                 <li>
                   <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
-                    <img class="max-width-4 mr-3" src="../../assets/svg/components/archive-dark-icon.svg" alt="Image Description">
+                    <img class="max-width-4 mr-3" src="<?= base_url()?>/assets/svg/components/archive-dark-icon.svg" alt="Image Description">
                     <div class="media-body">
                       <span>Archive</span>
                     </div>

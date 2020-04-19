@@ -14,7 +14,7 @@
         <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
-            <a class="navbar-brand u-header__navbar-brand" href="../home/index.html" aria-label="Space">
+            <a class="navbar-brand u-header__navbar-brand" href="<?= base_url()?>" aria-label="Space">
               <img class="u-header__navbar-brand-default" src="<?= base_url()?>assets/logo/logo.svg" alt="Logo">
               <img class="u-header__navbar-brand-mobile" src="<?= base_url()?>assets/logo/logo.png" alt="Logo">
             </a>
